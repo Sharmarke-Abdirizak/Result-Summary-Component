@@ -37,4 +37,14 @@ html {
 
 body {
   font-family: "Hanken Grotesk", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 700px;
+  max-width: 1440px;
+  display: flex;
 }
