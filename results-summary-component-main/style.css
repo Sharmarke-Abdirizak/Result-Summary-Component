@@ -10,6 +10,11 @@
   /* ## Colors */
   /* ### Primary */
 
+  --Light-red2: hsla(0, 66%, 86%, 0.849);
+  --Orangey-yellow2: hsl(39, 59%, 87%);
+  --Green-teal2: hsl(166, 69%, 87%);
+  --Cobalt-blue2: hsl(235, 77%, 86%);
+
   --Light-red: hsl(0, 100%, 67%);
   --Orangey-yellow: hsl(39, 100%, 56%);
   --Green-teal: hsl(166, 100%, 37%);
@@ -106,8 +111,98 @@ body {
   padding: 2rem 3rem;
   border-radius: 1.4rem;
   margin-left: -1.5rem;
+  width: 300px;
 }
 
 .white-col p.title {
   color: var(--Dark-gray-blue);
+  font-weight: 700;
+}
+
+.box {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 220px;
+  margin-bottom: 2rem;
+}
+
+.reaction,
+.memory,
+.verbal,
+.visual {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+}
+
+.reaction div,
+.memory div,
+.verbal div,
+.visual div {
+  display: flex;
+  gap: 7px;
+  font-weight: 500;
+}
+
+.reaction {
+  background-color: var(--Light-red2);
+}
+
+.image {
+  color: var(--Light-red);
+}
+
+.number p {
+  color: var(--Dark-gray-blue);
+}
+
+.number span {
+  color: rgba(128, 128, 128, 0.718);
+  font-weight: 500;
+}
+
+.memory {
+  background-color: var(--Orangey-yellow2);
+}
+
+.image2 {
+  color: var(--Orangey-yellow);
+}
+
+.verbal {
+  background-color: var(--Green-teal2);
+}
+
+.image3 {
+  color: var(--Green-teal);
+}
+
+.visual {
+  background-color: var(--Cobalt-blue2);
+}
+
+.image4 {
+  color: var(--Cobalt-blue);
+}
+
+.btn {
+  border: none;
+  background-color: var(--Dark-gray-blue);
+  color: var(--White);
+  padding: 0.7rem 4.7rem;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .white-col {
+    margin-left: 0;
+  }
 }
